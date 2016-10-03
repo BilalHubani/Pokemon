@@ -14,7 +14,21 @@ public class tipoPlanta extends Pokemon implements capturable{
     }
 
     @Override
+    public String toString() {
+        return "tipoPlanta{" +
+                "tipo='" + tipo + '\'' +
+                ", fuerte='" + fuerte + '\'' +
+                ", debil='" + debil + '\'' +
+                "} " + super.toString();
+    }
+
+    @Override
     public boolean capturar() {
-        return false;
+        double resultado;
+        resultado = Math.random()*100;
+        if (resultado>20)
+            return true;
+        else
+            return false;
     }
 }

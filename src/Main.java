@@ -9,5 +9,7 @@ public class Main {
         tipoAgua lapras = new tipoAgua("Lapras", 79, 132, 217);
         tipoPlanta breloom = new tipoPlanta("Breloom", 148, 50, 112);
         tipoPlanta bulbasaur = new tipoPlanta("Bulbasaur", 52, 63, 91);
+
+        System.out.println(bulbasaur);
     }
 }
