@@ -26,9 +26,16 @@ public class tipoPlanta extends Pokemon implements capturable{
     public boolean capturar() {
         double resultado;
         resultado = Math.random()*100;
-        if (resultado>20)
-            return true;
+        if (resultado>20){
+
+    return true;
+        }
         else
             return false;
+    }
+
+    @Override
+    public String info() {
+        return this.getNombre();
     }
 }

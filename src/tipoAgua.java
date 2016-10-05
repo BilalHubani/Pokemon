@@ -31,4 +31,9 @@ public class tipoAgua extends Pokemon implements capturable{
         else
             return false;
     }
+
+    @Override
+    public String info() {
+        return this.getNombre();
+    }
 }

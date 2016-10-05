@@ -14,6 +14,15 @@ public class tipoFuego extends Pokemon implements capturable{
     }
 
     @Override
+    public String toString() {
+        return "tipoFuego{" +
+                "tipo='" + tipo + '\'' +
+                ", fuerte='" + fuerte + '\'' +
+                ", debil='" + debil + '\'' +
+                "} " + super.toString();
+    }
+
+    @Override
     public boolean capturar() {
         double resultado;
         resultado = Math.random()*100;
@@ -21,5 +30,10 @@ public class tipoFuego extends Pokemon implements capturable{
             return true;
         else
             return false;
+    }
+
+    @Override
+    public String info() {
+        return this.getNombre();
     }
 }
