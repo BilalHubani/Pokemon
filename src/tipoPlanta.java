@@ -15,11 +15,11 @@ public class tipoPlanta extends Pokemon implements capturable{
 
     @Override
     public String toString() {
-        return "tipoPlanta{" +
+        return super.toString() + " tipoPlanta{" +
                 "tipo='" + tipo + '\'' +
                 ", fuerte='" + fuerte + '\'' +
                 ", debil='" + debil + '\'' +
-                "} " + super.toString();
+                "} " ;
     }
 
     @Override

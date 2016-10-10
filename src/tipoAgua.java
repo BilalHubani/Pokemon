@@ -15,17 +15,17 @@ public class tipoAgua extends Pokemon implements capturable{
 
     @Override
     public String toString() {
-        return "tipoAgua{" +
+        return  super.toString() + " tipoAgua{" +
                 "tipo='" + tipo + '\'' +
                 ", fuerte='" + fuerte + '\'' +
                 ", debil='" + debil + '\'' +
-                "} " + super.toString();
+                "} ";
     }
 
     @Override
     public boolean capturar() {
         double resultado;
-        resultado = Math.random()*100;
+        resultado = Math.random()*255;
         if (resultado>30)
             return true;
         else

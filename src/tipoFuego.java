@@ -15,11 +15,11 @@ public class tipoFuego extends Pokemon implements capturable{
 
     @Override
     public String toString() {
-        return "tipoFuego{" +
+        return super.toString() + " tipoFuego{" +
                 "tipo='" + tipo + '\'' +
                 ", fuerte='" + fuerte + '\'' +
                 ", debil='" + debil + '\'' +
-                "} " + super.toString();
+                "} ";
     }
 
     @Override
