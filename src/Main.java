@@ -23,9 +23,9 @@ public class Main {
         for (int i=0; i<capturar.size();i++){
             System.out.println(capturar.get(i));
             if (capturar.get(i).capturar()){
-                System.out.println(capturar.get(i).info()+": Capturado");
+                System.out.println(capturar.get(i).info()+" atrapado!!");
             }else{
-                System.out.println(capturar.get(i).info()+": Fallaste");
+                System.out.println(capturar.get(i).info()+" Uy casi lo consigues");
             }
 
         }

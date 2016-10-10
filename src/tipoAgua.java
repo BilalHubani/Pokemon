@@ -24,9 +24,11 @@ public class tipoAgua extends Pokemon implements capturable{
 
     @Override
     public boolean capturar() {
-        double resultado;
-        resultado = Math.random()*255;
-        if (resultado>30)
+        double random1;
+        double random2;
+        random1 = (this.getPs()*Math.random()*255*4)/(this.getDef()*4);
+        random2 = Math.random()*255;
+        if (random1>random2)
             return true;
         else
             return false;
